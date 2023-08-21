@@ -1,9 +1,9 @@
-package com.eperforma_server.repository;
+package com.eperforma_server.student.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.eperforma_server.entity.StudentDetailsEntity;
+import com.eperforma_server.student.entity.StudentDetailsEntity;
 
 @Repository
 public interface StudentDetailsRepository extends JpaRepository<StudentDetailsEntity, Integer> {

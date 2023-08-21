@@ -1,4 +1,4 @@
-package com.eperforma_server.service;
+package com.eperforma_server.student.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,9 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.eperforma_server.entity.StudentDetailsEntity;
-import com.eperforma_server.model.StudentDetailsModel;
-import com.eperforma_server.repository.StudentDetailsRepository;
+import com.eperforma_server.student.entity.StudentDetailsEntity;
+import com.eperforma_server.student.model.StudentDetailsModel;
+import com.eperforma_server.student.repository.StudentDetailsRepository;
 
 @Service
 public class StudentDetailsService {

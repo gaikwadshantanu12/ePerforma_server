@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @SpringBootApplication
 @CrossOrigin(origins = "*")
-@EntityScan("com.eperforma_server.entity")
+@EntityScan(basePackages = {"com.eperforma_server.student.entity", "com.eperforma_server.teacher.entity"})
 public class EperformaServerApplication {
 
 	public static void main(String[] args) {

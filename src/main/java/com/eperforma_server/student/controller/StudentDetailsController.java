@@ -1,4 +1,4 @@
-package com.eperforma_server.controller;
+package com.eperforma_server.student.controller;
 
 import java.util.List;
 
@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.eperforma_server.entity.StudentDetailsEntity;
-import com.eperforma_server.model.StudentDetailsModel;
-import com.eperforma_server.service.StudentDetailsService;
+import com.eperforma_server.student.entity.StudentDetailsEntity;
+import com.eperforma_server.student.model.StudentDetailsModel;
+import com.eperforma_server.student.service.StudentDetailsService;
 
 @RestController
 @CrossOrigin(origins = "*")

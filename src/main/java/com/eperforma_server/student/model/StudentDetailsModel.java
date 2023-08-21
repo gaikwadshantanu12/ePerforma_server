@@ -1,4 +1,4 @@
-package com.eperforma_server.model;
+package com.eperforma_server.student.model;
 
 public class StudentDetailsModel {
 	public int ID;

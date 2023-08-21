@@ -1,6 +1,4 @@
-package com.eperforma_server.entity;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
+package com.eperforma_server.student.entity;
 
 import jakarta.persistence.*;
 
