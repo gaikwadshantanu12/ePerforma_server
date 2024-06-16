@@ -1,8 +1,17 @@
 package com.eperforma_server.student.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "student_info")
 public class StudentDetailsEntity {
 	
@@ -17,8 +26,8 @@ public class StudentDetailsEntity {
 	@Column(name = "student_name")
 	public String studentName;
 	
-	@Column(name = "student_email")
-	public String studentEmail;
+	@Column(name = "student_personal_email")
+	public String studentPersonalEmail;
 	
 	@Column(name = "student_password")
 	public String studentPassword;
@@ -26,66 +35,21 @@ public class StudentDetailsEntity {
 	@Column(name = "student_department")
 	public String studentDepartment;
 	
-	public StudentDetailsEntity() {
-		
-	}
-
-	public StudentDetailsEntity(String studentCollegeID, String studentName, String studentEmail,
-			String studentPassword, String studentDepartment) {
-		super();
-		this.studentCollegeID = studentCollegeID;
-		this.studentName = studentName;
-		this.studentEmail = studentEmail;
-		this.studentPassword = studentPassword;
-		this.studentDepartment = studentDepartment;
-	}
-
-	public int getID() {
-		return ID;
-	}
-
-	public void setID(int iD) {
-		ID = iD;
-	}
-
-	public String getStudentCollegeID() {
-		return studentCollegeID;
-	}
-
-	public void setStudentCollegeID(String studentCollegeID) {
-		this.studentCollegeID = studentCollegeID;
-	}
-
-	public String getStudentName() {
-		return studentName;
-	}
-
-	public void setStudentName(String studentName) {
-		this.studentName = studentName;
-	}
-
-	public String getStudentEmail() {
-		return studentEmail;
-	}
-
-	public void setStudentEmail(String studentEmail) {
-		this.studentEmail = studentEmail;
-	}
+	@Column(name = "student_mobile")
+	public String studentMobile;
 	
-	public String getStudentPassword() {
-		return studentPassword;
-	}
+	@Column(name = "student_current_year")
+	public String studentCurrentYear;
 
-	public void setStudentPassword(String studentPassword) {
-		this.studentPassword = studentPassword;
-	}
-	
-	public String getStudentDepartment() {
-		return studentDepartment;
-	}
+	@Column(name = "student_roll_no")
+	public int studentRollNo;
 
-	public void setStudentDepartment(String studentDepartment) {
-		this.studentDepartment = studentDepartment;
-	}
+	@Column(name = "student_college_email")
+	public String studentCollegeEmail;
+
+	@Column(name = "student_profile_photo")
+	public String studentProfilePhoto;
+
+	@Column(name = "student_current_section")
+	public String studentCurrentSection;
 }
-
